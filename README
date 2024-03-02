@@ -1,0 +1,36 @@
+READ ME
+
+Instructions to run code:
+Make sure you are in the DoublyLinkedList folder
+Type make to compile 
+To run 
+Type ./main inputfile.txt
+
+
+A doubly linked list is a type of linked list data structure where each element, known as a node, contains not only a reference to the next node in the sequence (as in a singly linked list) but also a reference to the previous node. This additional reference allows traversal of the list in both forward and backward directions.
+ 
+
+Extra Methods 
+deleteSubsections:
+Check to see if there are no values in list, if so return with nothing changed
+Check to see if the first value is greater than the upper bound, if so return with nothing changed
+Check to see if the last value is less than the lower bound, if so return with nothing changed
+If none of the above are true, then this function will delete the values in the list that are between the upper and lower bound.
+	
+Time Complexity: O(n^2)
+It may be possible to improve the efficiency of our algorithm.
+
+Mode:
+Check if the list is null 
+Make a current Node that can be used to make sure that the entire list is gone through
+Create a while loop that loops until current is equal to null , meaning end of list is reached 
+
+Time Complexity: O(n)
+O(n) would be the most efficient you can do this function, because you can not find the mode with a constant time complexity.
+
+swapAlternate:
+Check to see if there are no values in the list or if there is only one value in the list, if so then return with nothing changed
+Then swap the alternating nodes in the list if even until finished, or swap the alternating nodes up to the last one if the list is odd.
+
+Time Complexity: O(n)
+O(n) would be the most efficient you can do this function, because you can not swap the alternating nodes with a constant time complexity.
